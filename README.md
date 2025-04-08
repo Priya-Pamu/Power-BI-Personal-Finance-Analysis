@@ -39,12 +39,10 @@ Here are the dashboards that I created. If you would like to actually play aroun
 
 ## Hardware and Software Used
 
-- Python (v3.8)
-- Python Libraries: openpyxl, os
-- Windows 10 Machine
-- Microsoft PowerBI Desktop (v2.93)
+- Windows 11 Machine
+- Microsoft PowerBI Desktop 
 - Microsoft Excel
-- Apple iPad (7th Gen) and pencil
+- Power Query Editor
 
 
 ## Overview of Microsoft Power BI
@@ -59,15 +57,12 @@ The program itself can be used both on a local machine (via Power BI "Desktop") 
 Here is a brief description of each file/folder found in this GitHub repository.
 
 ### **Finance_Data/20xx**
-This is the folder that contains each month's Excel data in a separate Excel workbook. The dates (currently) range from Aug 2018 - Dec 2020.
-
-### change_excel_sheets.py
-This Python script takes in an Excel file with multiple sheets and renames all sheets to 'Sheet1'. (*Apparantly this was necessary for importing the Excel data into PowerBI?*)
+This is the folder that contains each month's Excel data in a separate Excel workbook. The dates (currently) range from Jan 2024 - Dec 2024.
 
 ### Finance_Data.xlsx
-This is a copy of the original Excel file that I was using to keep track of my spending.
+This is a copy of the original Excel file that I was using to keep track of my spending.(*Apparantly this was necessary for importing the Excel data into PowerBI?*)
 
-### Personal_Finance_Dashboard.pbix
+### Personal Finance Dashboard Actual V Budget background.pbix
 This is the main Power BI file containing the finance dashboards.
 
 
@@ -80,7 +75,7 @@ In order to import this data into PowerBI, it was quite the process. Since the d
 
 ## Data Cleaning
 
-There was quite a bit of data cleaning to do. I had to do some basic editing of the 'Item' category column, in order to have consistent categories. For example, I had 'hair cut', 'Hair cut', 'Hair-Cut' as separate categores, and so had to standardize this into simply a 'Hair Cut' category.
+There was quite a bit of data cleaning to do. I had to do some basic editing of the 'Item' category column, in order to have consistent categories. For example,so had to standardize this into simply a category.
 
 There was a lot of work needed to be done with dates. Some dates were of a 'Text' type, some were a 'General' type, and still others were the 'Date' type. These had to be standardized.
 
@@ -135,6 +130,8 @@ Finally, again under the CURRENT FILE options, go to 'Regional Settings' and mak
 
 Now that everything is set up, you simply have to download all my project files as they are into a folder on your machine, open the Power BI file (the one with .pbix extension) and have fun!
 
+# Overview:
+![Personal Finance Dashboard Actual V Budget ](https://github.com/user-attachments/assets/f9fe05f4-db5b-4fc9-a7c1-8e3c50987b29)
 
 ## Future Steps
 
@@ -148,13 +145,12 @@ For future improvement, we can consider the following ideas:
 
 ## Author
 
-- **AJ Singh** (https://github.com/aj112358/)
+- **Raga Priya P** ((https://github.com/Priya-Pamu/Priya-Pamu)
 
 
 ## Acknowledgements
 
 - Creators of Microsoft PowerBI - It's a pretty amazing tool!
-- All the kind and patient cashiers who took the time to print out a receipt for me.
 - Viewers of my GitHub page...Thanks for visiting!
 
 
