@@ -1,6 +1,4 @@
-# Personal Finance PowerBI Dashboard
-
-A project that utilizes Microsoft PowerBI to analyze personal financial data and visualize expenses through an interactive dashboard.
+# Personal Finance Analysis PowerBI Dashboard
 
 > _"Data analysis is not just about presenting data, but to build a story and create a meaningful narrative from the raw data. At the end of the day, that's what analytics is all about - not about writing code, not about crunching numbers, not about memorizing formula syntax - it's about deriving meaning and context from the data and, more importantly, using it to make real change."_
 > _- Chris Dutton, Maven Analytics_
@@ -15,26 +13,21 @@ As one should, I have been keeping track of all my daily spending using Microsof
 
 Here are the questions I would like the PowerBI dashboards to answer:
 - Monthly spending (in a given year).
-- How much money spent per item category.
-- List all expenses with comments.
-- How much money spent per location.
+- How much money spent per category.
+- List all expenses with Type.
 - The number of purchases in various price ranges.
-- Quarterly and weekly spending information.
-- Various average costs (per week, month, day).
-- Comparison of food costs to restaurant costs.
+- Compare the Net amount,Income,Expense
 - Spending behavior when I'm sick.
-- Comparison of weekday and weekend spending.
+  
 
-In order to answer these questions, I invested time in planning the PowerBI measures I would need to create and also planned a rough outline of the dashboard visuals I wanted. 
+In order to answer these questions, I invested time in planning the PowerBI measures I would need to create and also planned a rough outline of the dashboard visuals. 
 
 
 ## Data Analysis Summary
 
-Here are the dashboards that I created. If you would like to actually play around with these dashboards see the end of this readme for instructions:
+Here are the dashboard that I created. If you would like to actually play around with these dashboards see the end of this readme for instructions:
 
-![alt text][ExecSumm]
-
-![alt text][Granular]
+![Personal Finance Dashboard Actual V Budget ](https://github.com/user-attachments/assets/f9fe05f4-db5b-4fc9-a7c1-8e3c50987b29)
 
 
 ## Hardware and Software Used
@@ -68,7 +61,7 @@ This is the main Power BI file containing the finance dashboards.
 
 ## Data Collection Methodology
 
-I collected this data by keeping all purchase receipts and inputting the data manually into Excel. The information I kept track of was: Date, Item Category, Price, Location, Comment.
+I collected this data by keeping all purchase receipts and inputting the data manually into Excel. The information I kept track of was: Date, Item Category, Price etc.
 
 In order to import this data into PowerBI, it was quite the process. Since the data was contained in *multiple Excel sheets in the same Excel workbook*, I first had to separate the sheets into their own Excel workbook - this turned out to be the easiest avenue to importing the data.
 
@@ -84,7 +77,7 @@ Finally, only a few rows contained null entries, so I simply chose to remove the
 
 ## Measure Creation & Visualizations
 
-In order to help answer the questions listed above, I started by making three other tables: (i) Calendar Lookup, (i) Item Lookup, (iii) Location Lookup.
+In order to help answer the questions listed above, I started by making three other tables: (i) Calendar Lookup, (i) Category Lookup
 
 The calendar lookup contains each range of dates from the data. From this I created various other useful calculated columns including month name/number, month-and-year, quarter,  and end of week/month.
   
@@ -130,8 +123,6 @@ Finally, again under the CURRENT FILE options, go to 'Regional Settings' and mak
 
 Now that everything is set up, you simply have to download all my project files as they are into a folder on your machine, open the Power BI file (the one with .pbix extension) and have fun!
 
-# Overview:
-![Personal Finance Dashboard Actual V Budget ](https://github.com/user-attachments/assets/f9fe05f4-db5b-4fc9-a7c1-8e3c50987b29)
 
 ## Future Steps
 
